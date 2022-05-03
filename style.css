@@ -1,0 +1,32 @@
+.button {
+    display: inline-block;
+    padding: 8px;
+    font-size: 20px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: white;
+    background-color: rgb(76 , 175 , 80);
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px rgb(153 , 153 , 153);
+  }
+  
+  .button:hover {
+    background-color: rgb(62 , 142 , 65);
+  }
+  
+  .button:active {
+    background-color: rgb(62 , 142 , 65);
+    box-shadow: 0 5px rgb(102 , 102 , 102);
+    transform: translateY(4px);
+  }
+  
+  #texto-tarefa {
+    padding: 1px 5px;
+  }
+  
+  .completed {
+    text-decoration: line-through;
+  }
