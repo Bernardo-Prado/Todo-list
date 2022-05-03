@@ -9,23 +9,27 @@
 </head>
 <body>
   <header>
-    <h1>Minha Lista de Tarefas</h1>
-    <p id="funcionamento">Clique duas vezes em um item para marcá-lo como completo</p>   
+    <label for="switch">
+        <input type="checkbox" id="switch"> Dark Mode
+    </label>
+    <h1>Tarefas a serem feitas</h1>
+    <p id="funcionamento">Clique duas vezes em um item para marcá-lo como completo</p>
+    <p id="funcionamento">Clique na tarefa para destaca-la</p>
   </header>
 
-  <div>
+  <div class="centralizer">
     <form id="container">
       <label for="texto-tarefa">Adicionar tarefa:</label><br>
         <input placeholder="Digite aqui..." type="text" id="texto-tarefa">
+        <button type="button" class="button" id="criar-tarefa">Adicionar</button>
         <ol id="lista-tarefas"></ol>
       </form>  
   </div>
 
-  <div>
-    <button type="button" class="button" id="criar-tarefa">Tarefa</button>
+  <footer class="centralizer-button">
     <button type="button" class="button" id="apaga-tudo">Apagar Lista</button>
     <button type="button" class="button" id="remover-finalizados">Remover Finalizados</button>
-  </div>
+  </footer>
 
   <script src="script.js"></script>
 </body>
