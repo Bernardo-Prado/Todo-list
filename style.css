@@ -1,32 +1,92 @@
-.button {
-    display: inline-block;
-    padding: 8px;
-    font-size: 20px;
-    cursor: pointer;
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+
+:root {
+    --buton-color: white;
+    --button-act: rgb(62, 142, 65);
+}
+
+.darkmode:root {
+    --body-bg: black;
+    --h1-color: white;
+    --funcionamento-color: white;
+    --centralizer-color: white;
+}
+
+body {
+    background-color: var(--body-bg);
+}
+
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: var(--h1-color);
+}
+
+#funcionamento {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: var(--funcionamento-color);
+}
+
+.centralizer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--centralizer-color);
+}
+
+.centralizer-button {
+    bottom: 20px;
+    display: flex;
+    position: absolute; 
+    left: 41%;
     text-align: center;
-    text-decoration: none;
-    outline: none;
-    color: white;
-    background-color: rgb(76 , 175 , 80);
-    border: none;
-    border-radius: 15px;
-    box-shadow: 0 9px rgb(153 , 153 , 153);
-  }
-  
-  .button:hover {
-    background-color: rgb(62 , 142 , 65);
-  }
-  
-  .button:active {
-    background-color: rgb(62 , 142 , 65);
-    box-shadow: 0 5px rgb(102 , 102 , 102);
-    transform: translateY(4px);
-  }
-  
-  #texto-tarefa {
-    padding: 1px 5px;
-  }
-  
-  .completed {
-    text-decoration: line-through;
-  }
+}
+
+.button {
+  display: inline-block;
+  padding: 8px;
+  font-size: 20px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: var(--buton-color);
+  background-color: rgb(76, 175, 80);
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px rgb(153, 153, 153);
+}
+
+.button:hover {
+  background-color: rgb(62, 142, 65);
+}
+
+.button:active {
+  background-color: var(--button-act);
+  box-shadow: 0 5px rgb(255, 251, 0);
+  transform: translateY(4px);
+}
+
+#texto-tarefa {
+  padding: 1px 5px;
+}
+
+.completed {
+  text-decoration: line-through;
+}
+
+#lista-tarefas {
+    font-family: 'Shadows Into Light', cursive;
+}
+
+#funcionamento {
+  font-family: "Kalam", cursive;
+}
